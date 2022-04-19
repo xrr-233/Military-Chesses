@@ -19,7 +19,7 @@ public class DeployRed : MonoBehaviour
     private static List<GameObject> ProvincesAvailable;
     private static List<GameObject> ProvincesOccupied;
 
-    private static Material mt_normal, mt_canGo, mt_canGoHovering, mt_canEat, mt_canEatHovering;
+    private static Material mt_normal, mt_canGo, mt_canEat;
 
     private static int[] quant, total, ident;
     private static int choosing, count;
@@ -49,9 +49,7 @@ public class DeployRed : MonoBehaviour
 
         mt_normal = Resources.Load<Material>("Materials/mt_normal");
         mt_canGo = Resources.Load<Material>("Materials/mt_canGo");
-        mt_canGoHovering = Resources.Load<Material>("Materials/mt_canGoHovering");
         mt_canEat = Resources.Load<Material>("Materials/mt_canEat");
-        mt_canEatHovering = Resources.Load<Material>("Materials/mt_canEatHovering");
 
         GameObject Provinces = GameObject.Find("Provinces");
 
@@ -93,12 +91,6 @@ public class DeployRed : MonoBehaviour
         BtnRemove.SetActive(false);
 
         isAvailable = false;
-
-    }
-
-    // Update is called once per frame
-    private void Update()
-    {
 
     }
 

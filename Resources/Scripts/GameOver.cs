@@ -14,25 +14,17 @@ using UnityEditor;
 /// </summary>
 public class GameOver : MonoBehaviour
 {
-    // Start is called before the first frame update
     private static bool isRedWin;
     private static Texture Japan, China;
-
     private static GameObject I;
 
-    private void Start()
+    public void Init()
     {
         isRedWin = false;
         Japan = Resources.Load<Texture>("Textures/Japan");
         China = Resources.Load<Texture>("Textures/China");
 
-        I = this.gameObject;
-    }
-
-    // Update is called once per frame
-    private void Update()
-    {
-        
+        I = gameObject;
     }
 
     public static void Win(bool b)
@@ -44,13 +36,11 @@ public class GameOver : MonoBehaviour
             I.transform.GetChild(1).GetComponent<Text>().text = "红方胜利！";
             I.transform.GetChild(1).GetComponent<Text>().color = new Color(255, 0, 0);
         }
-            
         else
         {
             I.transform.GetChild(0).GetComponent<RawImage>().texture = China;
             I.transform.GetChild(1).GetComponent<Text>().text = "蓝方胜利！";
             I.transform.GetChild(1).GetComponent<Text>().color = new Color(0, 0, 255);
         }
-            
     }
 }

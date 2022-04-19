@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MusicPlayer : MonoBehaviour
 {
@@ -11,43 +12,23 @@ public class MusicPlayer : MonoBehaviour
     private bool[] peaceSongPlayed, warSongPlayed;
     private int peaceSongSize, warSongSize;
     private int nowPlaying;
-    private int mode;
+    private int mode; // 战争状态
     private bool warIsEnd;
 
     // Start is called before the first frame update
     void Start()
     {
-        music = gameObject.GetComponent<AudioSource>();
+        music = gameObject.AddComponent<AudioSource>();
         warIsEnd = false;
 
-        string peacePath = Application.dataPath + "/Resources/Music/peace";
-
-        DirectoryInfo folder = new DirectoryInfo(peacePath);
-        FileInfo[] peaceSongFile = folder.GetFiles("*.mp3");
-        peaceSongSize = peaceSongFile.Length;
-        peaceSongList = new AudioClip[peaceSongSize];
-        peaceSongPlayed = new bool[peaceSongSize];
+        LoadPeaceSong();
+        LoadWarSong();
 
         music.playOnAwake = true;
-        music.clip = null;
-
-        for (int i = 0; i < peaceSongSize; i++)
-        {
-            string temp = Path.GetFileNameWithoutExtension(peaceSongFile[i].Name);
-            peaceSongList[i] = Resources.Load<AudioClip>("Music/peace/" + temp);
-            if (temp.Equals("hoi4 main theme allies"))
-            {
-                music.clip = peaceSongList[i];
-                peaceSongPlayed[i] = true;
-                nowPlaying = i;
-                break;
-            }
-        }
-
-        mode = 0;
-        peaceSongSize--;
+        music.clip = Resources.Load<AudioClip>("Music/hoi4 main theme allies");
         music.Play();
-        
+
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
@@ -119,6 +100,23 @@ public class MusicPlayer : MonoBehaviour
         }
     }
 
+    public void LoadPeaceSong()
+    {
+        string peacePath = Application.dataPath + "/Resources/Music/peace";
+
+        DirectoryInfo folder = new DirectoryInfo(peacePath);
+        FileInfo[] peaceSongFile = folder.GetFiles("*.mp3");
+        peaceSongSize = peaceSongFile.Length;
+        peaceSongList = new AudioClip[peaceSongSize];
+        peaceSongPlayed = new bool[peaceSongSize];
+
+        for (int i = 0; i < peaceSongSize; i++)
+        {
+            string temp = Path.GetFileNameWithoutExtension(peaceSongFile[i].Name);
+            peaceSongList[i] = Resources.Load<AudioClip>("Music/peace/" + temp);
+        }
+    }
+
     public void LoadWarSong()
     {
         string warPath = Application.dataPath + "/Resources/Music/war_play_1";
@@ -143,6 +141,7 @@ public class MusicPlayer : MonoBehaviour
 
         for (int i = 0; i < warSongSize; i++)
         {
+            print(basicSong);
             if (warSongList[i].name.Equals(basicSong))
             {
                 music.clip = warSongList[i];
@@ -159,7 +158,8 @@ public class MusicPlayer : MonoBehaviour
 
     public void EndWar()
     {
-        music.Stop();
         warIsEnd = true;
+        music.clip = Resources.Load<AudioClip>("Music/soviet victory");
+        music.Play();
     }
 }

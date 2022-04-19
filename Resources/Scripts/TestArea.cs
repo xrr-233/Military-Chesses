@@ -35,21 +35,9 @@ public class TestArea : MonoBehaviour
     public List<GameObject> roadsList = new List<GameObject>();
     public List<GameObject> raliwayList = new List<GameObject>();
 
-    private AudioSource sound;
-    private AudioClip sd_clicked;
-    private AudioClip sd_withdraw;
-    private AudioClip[] sd_deploy = new AudioClip[3];
-    private AudioClip[] sd_change = new AudioClip[3];
-    private AudioClip sd_move;
-    private AudioClip sd_win;
-    private AudioClip sd_draw;
-    private AudioClip sd_lose;
-
     private static bool isAvailable;
     private static bool isRedRound;
-
-
-    // Start is called before the first frame update
+    private SoundPlayer soundPlayer;
 
     private void Awake()
     {
@@ -61,19 +49,6 @@ public class TestArea : MonoBehaviour
         mt_canEat = Resources.Load<Material>("Materials/mt_canEat");
         mt_canEatHovering = Resources.Load<Material>("Materials/mt_canEatHovering");
 
-        sd_clicked = Resources.Load<AudioClip>("Sounds/sfx_select");
-        sd_withdraw = Resources.Load<AudioClip>("Sounds/sfx_click");
-        sd_deploy[0] = Resources.Load<AudioClip>("Sounds/select_army_01");
-        sd_deploy[1] = Resources.Load<AudioClip>("Sounds/select_army_02");
-        sd_deploy[2] = Resources.Load<AudioClip>("Sounds/select_army_03");
-        sd_change[0] = Resources.Load<AudioClip>("Sounds/select_army_04");
-        sd_change[1] = Resources.Load<AudioClip>("Sounds/select_army_04");
-        sd_change[2] = Resources.Load<AudioClip>("Sounds/select_army_04");
-        sd_move = Resources.Load<AudioClip>("Sounds/GI_InfantryMove");
-        sd_win = Resources.Load<AudioClip>("Sounds/sfx_occupy");
-        sd_draw = Resources.Load<AudioClip>("Sounds/sfx_draw");
-        sd_lose = Resources.Load<AudioClip>("Sounds/sfx_dengdengdong");
-
         isClickedGlobalGameObject = null;
         isVisited = false;
         isAvailable = false;
@@ -83,8 +58,15 @@ public class TestArea : MonoBehaviour
         Railways = new List<GameObject>();
         Eats = new List<GameObject>();
 
-        sound = gameObject.AddComponent<AudioSource>();
-        sound.playOnAwake = false;
+        if (soundPlayer == null)
+            try
+            {
+                soundPlayer = GameObject.Find("SoundPlayer").GetComponent<SoundPlayer>();
+            }
+            catch
+            {
+                soundPlayer = new GameObject("SoundPlayer").AddComponent<SoundPlayer>();
+            }
     }
 
     void Start()
@@ -130,8 +112,7 @@ public class TestArea : MonoBehaviour
         {
             if(this.transform.GetComponent<MeshRenderer>().material.name.Equals("mt_canGoHovering (Instance)"))
             {
-                sound.clip = sd_deploy[Random.Range(0, 3)];
-                sound.Play();
+                soundPlayer.Deploy();
 
                 this.chess = DeployRed.getChess();
                 var script = this.chess.transform.GetComponent<Chess>();
@@ -140,8 +121,7 @@ public class TestArea : MonoBehaviour
             }
             else if (this.transform.GetComponent<MeshRenderer>().material.name.Equals("mt_canEatHovering (Instance)"))
             {
-                sound.clip = sd_change[Random.Range(0, 3)];
-                sound.Play();
+                soundPlayer.Change();
 
                 var script = this.chess.transform.GetComponent<Chess>();
                 script.SendMessage("Dead", this.chess);
@@ -153,8 +133,7 @@ public class TestArea : MonoBehaviour
             }
             else if (this.chess != null)
             {
-                sound.clip = sd_clicked;
-                sound.Play();
+                soundPlayer.Click();
 
                 if (!this.chess.name.Equals("iii_jun_qi"))
                 {
@@ -171,8 +150,7 @@ public class TestArea : MonoBehaviour
         {
             if (this.transform.GetComponent<MeshRenderer>().material.name.Equals("mt_canGoHovering (Instance)"))
             {
-                sound.clip = sd_deploy[Random.Range(0,3)];
-                sound.Play();
+                soundPlayer.Deploy();
 
                 this.chess = DeployBlue.getChess();
                 var script = this.chess.transform.GetComponent<Chess>();
@@ -181,8 +159,7 @@ public class TestArea : MonoBehaviour
             }
             else if (this.transform.GetComponent<MeshRenderer>().material.name.Equals("mt_canEatHovering (Instance)"))
             {
-                sound.clip = sd_change[Random.Range(0, 3)];
-                sound.Play();
+                soundPlayer.Change();
 
                 var script = this.chess.transform.GetComponent<Chess>();
                 script.SendMessage("Dead", this.chess);
@@ -194,8 +171,7 @@ public class TestArea : MonoBehaviour
             }
             else if (this.chess != null)
             {
-                sound.clip = sd_clicked;
-                sound.Play();
+                soundPlayer.Click();
 
                 if (!this.chess.name.Equals("iii_jun_qi"))
                 {
@@ -230,8 +206,7 @@ public class TestArea : MonoBehaviour
             }
             if (Roads.Contains(this.gameObject) || Railways.Contains(this.gameObject))
             {
-                sound.clip = sd_move;
-                sound.Play();
+                soundPlayer.Move();
 
                 isClickedGlobalGameObject.transform.GetComponent<MeshRenderer>().material = mt_normal;
                 if (isRedRound)
@@ -255,8 +230,7 @@ public class TestArea : MonoBehaviour
             }
             if (isClickedGlobalGameObject != this.gameObject)
             {
-                sound.clip = sd_clicked;
-                sound.Play();
+                soundPlayer.Click();
 
                 if (isClickedGlobalGameObject != null)
                 {
@@ -294,8 +268,7 @@ public class TestArea : MonoBehaviour
             }
             else
             {
-                sound.clip = sd_withdraw;
-                sound.Play();
+                soundPlayer.Withdraw();
 
                 this.transform.GetComponent<MeshRenderer>().material = mt_normal;
                 var script = isClickedGlobalGameObject.transform.GetComponent<TestArea>();
@@ -307,11 +280,6 @@ public class TestArea : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     #region 判定格子是否可走
     private void CanGo(int step)
@@ -409,8 +377,7 @@ public class TestArea : MonoBehaviour
 
         if(myLevel == -2 || itsLevel == -2)
         {
-            sound.clip = sd_draw;
-            sound.Play();
+            soundPlayer.Draw();
 
             WarSystem.RedReduce();
             WarSystem.BlueReduce();
@@ -425,8 +392,7 @@ public class TestArea : MonoBehaviour
         {
             if(myLevel == 9)
             {
-                sound.clip = sd_win;
-                sound.Play();
+                soundPlayer.Win();
 
                 if (mySide.transform.GetComponent<Chess>().GetSide() == "Red")
                     WarSystem.BlueReduce();
@@ -441,8 +407,7 @@ public class TestArea : MonoBehaviour
             }
             else
             {
-                sound.clip = sd_lose;
-                sound.Play();
+                soundPlayer.Lose();
 
                 if (mySide.transform.GetComponent<Chess>().GetSide() == "Red")
                     WarSystem.RedReduce();
@@ -456,8 +421,7 @@ public class TestArea : MonoBehaviour
         }
         else if(itsLevel == -3)
         {
-            sound.clip = sd_win; //本来是完全胜利 现在先用这个代替
-            sound.Play();
+            soundPlayer.Win();
 
             if (mySide.transform.GetComponent<Chess>().GetSide() == "Red")
             {
@@ -476,14 +440,19 @@ public class TestArea : MonoBehaviour
             script = itsSide.transform.GetComponent<Chess>();
             script.SendMessage("Dead");
 
-            GameObject.Find("Canvas (7)").GetComponent<Canvas>().enabled = true;
+            foreach (Transform t in GameObject.Find("Canvas").transform)
+            {
+                if (t.name == "Game Over")
+                    t.gameObject.SetActive(true);
+                if (t.name == "War UI")
+                    t.gameObject.SetActive(false);
+            }
+                
             GameObject.Find("CameraController").GetComponent<CameraControl>().enabled = false;
-            GameObject.Find("Canvas (5)").GetComponent<Canvas>().enabled = false;
         }
         else if(myLevel == itsLevel)
         {
-            sound.clip = sd_draw;
-            sound.Play();
+            soundPlayer.Draw();
 
             WarSystem.RedReduce();
             WarSystem.BlueReduce();
@@ -496,8 +465,7 @@ public class TestArea : MonoBehaviour
         }
         else if(myLevel > itsLevel)
         {
-            sound.clip = sd_lose;
-            sound.Play();
+            soundPlayer.Lose();
 
             if (mySide.transform.GetComponent<Chess>().GetSide() == "Red")
                 WarSystem.RedReduce();
@@ -510,8 +478,7 @@ public class TestArea : MonoBehaviour
         }
         else
         {
-            sound.clip = sd_win;
-            sound.Play();
+            soundPlayer.Win();
 
             if (mySide.transform.GetComponent<Chess>().GetSide() == "Red")
                 WarSystem.BlueReduce();

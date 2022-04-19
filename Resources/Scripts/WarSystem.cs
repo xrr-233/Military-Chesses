@@ -41,12 +41,6 @@ public class WarSystem : MonoBehaviour
         BlueBool.transform.GetComponent<Text>().color = black;
     }
 
-    // Update is called once per frame
-    private void Update()
-    {
-        
-    }
-
     public static void ChangeSide()
     {
         isRedRound ^= true;
