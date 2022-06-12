@@ -10,13 +10,13 @@ using UnityEngine;
 /// </summary>
 public class CameraControl : MonoBehaviour
 {
-    private float player_speed = 3.0f; //角色移动速度
+    private float player_speed = 5.0f; //角色移动速度
     private float mouse_speed = 2.0f;
 
     private float horizontal;//按下A、D或左右键会从零开始慢慢到-1或1，用来使角色移动更加平滑
     private float vertical;
 
-    private Vector3 lastRotation, lastPosition;
+    private Vector3 lastRotation, lastPosition, cityScale;
     private GameObject MainCamera;
     void Start()
     {
@@ -45,37 +45,36 @@ public class CameraControl : MonoBehaviour
         transform.Translate(MainCamera.transform.forward * player_speed * Time.deltaTime * vertical, Space.World);
 
         #region 限制第一人称视角范围
-        if (transform.position.y < 0.5f)
+        if (transform.position.y < 6.0f)
         {
-            Vector3 temp = new Vector3(transform.position.x, 0.5f, transform.position.z);
+            Vector3 temp = new Vector3(transform.position.x, 6.0f, transform.position.z);
             transform.position = temp;
         }
-        if (transform.position.y > 9.0f)
+        if (transform.position.y > 30.0f)
         {
-            Vector3 temp = new Vector3(transform.position.x, 9.0f, transform.position.z);
+            Vector3 temp = new Vector3(transform.position.x, 30.0f, transform.position.z);
             transform.position = temp;
         }
-        if (transform.position.x < -6.0f)
+        /*if (transform.position.x < center.x)
         {
-            Vector3 temp = new Vector3(-6.0f, transform.position.y, transform.position.z);
+            Vector3 temp = new Vector3(center.x, transform.position.y, transform.position.z);
             transform.position = temp;
         }
-        if (transform.position.x > 6.0f)
+        if (transform.position.x > center.x + planeX)
         {
-            Vector3 temp = new Vector3(6.0f, transform.position.y, transform.position.z);
+            Vector3 temp = new Vector3(center.z, transform.position.y, transform.position.z);
             transform.position = temp;
         }
-        if (transform.position.z < -4.0f)
+        if (transform.position.z < center.z + planeZ / 3)
         {
             Vector3 temp = new Vector3(transform.position.x, transform.position.y, -4.0f);
             transform.position = temp;
         }
-        if (transform.position.z > 8.0f)
+        if (transform.position.z > center.z + planeZ / 3 * 2)
         {
             Vector3 temp = new Vector3(transform.position.x, transform.position.y, 8.0f);
             transform.position = temp;
-        }
+        }*/
         #endregion
-
     }
 }

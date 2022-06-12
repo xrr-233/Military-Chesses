@@ -13,7 +13,7 @@ public class UIController : MonoBehaviour
     void Start()
     {
         canvas = GameObject.Find("Canvas");
-        if (musicPlayer == null)
+        /*if (musicPlayer == null)
             try
             {
                 musicPlayer = GameObject.Find("MusicPlayer").GetComponent<MusicPlayer>();
@@ -21,7 +21,7 @@ public class UIController : MonoBehaviour
             catch
             {
                 musicPlayer = new GameObject("MusicPlayer").AddComponent<MusicPlayer>();
-            }
+            }*/
         if (soundPlayer == null)
             try
             {

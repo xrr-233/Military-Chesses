@@ -294,12 +294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1255772463}
-  raliwayList:
-  - {fileID: 1581601426}
-  - {fileID: 1803516305}
 --- !u!64 &14969787
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -680,13 +674,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 818783152}
-  - {fileID: 996102585}
-  - {fileID: 1500161357}
-  - {fileID: 110799120}
-  raliwayList: []
 --- !u!64 &41301755
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -892,12 +879,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1013778232}
-  - {fileID: 889625057}
-  - {fileID: 1710138743}
-  raliwayList: []
 --- !u!64 &48267102
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1007,12 +988,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1719948127}
-  raliwayList:
-  - {fileID: 1533913337}
-  - {fileID: 675778863}
 --- !u!64 &49891220
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1267,11 +1242,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 736909543}
-  - {fileID: 1905667987}
-  raliwayList: []
 --- !u!64 &50546793
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1491,12 +1461,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 106947723}
-  - {fileID: 362744030}
-  - {fileID: 1175559337}
-  raliwayList: []
 --- !u!64 &57024643
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1767,11 +1731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2010708454}
-  raliwayList:
-  - {fileID: 1311072450}
 --- !u!64 &66404279
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1977,14 +1936,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1746496734}
-  - {fileID: 1256592358}
-  raliwayList:
-  - {fileID: 477943160}
-  - {fileID: 696408993}
-  - {fileID: 818257621}
 --- !u!64 &68013132
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2340,6 +2291,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75404021}
   m_CullTransparentMesh: 0
+--- !u!1 &76970070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 76970073}
+  - component: {fileID: 76970072}
+  - component: {fileID: 76970071}
+  m_Layer: 0
+  m_Name: Terrain (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!154 &76970071
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76970070}
+  m_Material: {fileID: 0}
+  m_Enabled: 1
+  m_TerrainData: {fileID: 15600000, guid: 60fb751e9dd616e47b3a58b36f218471, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &76970072
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76970070}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: 60fb751e9dd616e47b3a58b36f218471, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 2100000, guid: e8d648223283cb14c8a240789ccf5de3, type: 2}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ScaleInLightmap: 0.0256
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+--- !u!4 &76970073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76970070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &80943541
 GameObject:
   m_ObjectHideFlags: 0
@@ -2894,12 +2921,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1040990348}
-  - {fileID: 542536853}
-  - {fileID: 1609173385}
 --- !u!64 &105785262
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3009,13 +3030,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 631835039}
-  - {fileID: 57024640}
-  - {fileID: 1175559337}
-  - {fileID: 1411315977}
-  raliwayList: []
 --- !u!64 &106947725
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3125,13 +3139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 41301753}
-  - {fileID: 1344241094}
-  - {fileID: 617700207}
-  - {fileID: 174351143}
-  raliwayList: []
 --- !u!64 &110799122
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3657,14 +3664,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2006525912}
-  - {fileID: 595746410}
-  - {fileID: 2121345354}
-  raliwayList:
-  - {fileID: 596710698}
-  - {fileID: 1458629077}
 --- !u!64 &126824569
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4172,11 +4171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 152529784}
-  - {fileID: 1656748895}
-  raliwayList: []
 --- !u!64 &143529534
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4272,14 +4266,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 450694307}
-  - {fileID: 232667530}
-  raliwayList:
-  - {fileID: 674371429}
-  - {fileID: 1986053469}
-  - {fileID: 435513124}
 --- !u!64 &144181673
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4444,13 +4430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 143529531}
-  - {fileID: 1954731906}
-  - {fileID: 568054790}
-  raliwayList:
-  - {fileID: 992748078}
 --- !u!64 &152529786
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4560,11 +4539,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1344241094}
-  - {fileID: 617700207}
-  raliwayList: []
 --- !u!64 &158910706
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4767,12 +4741,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 110799120}
-  - {fileID: 1311072450}
-  - {fileID: 2010708454}
-  raliwayList: []
 --- !u!64 &174351146
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4868,13 +4836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1123562648}
-  - {fileID: 1234429126}
-  - {fileID: 654076786}
-  - {fileID: 854840769}
-  raliwayList: []
 --- !u!64 &177734298
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5080,13 +5041,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 247619629}
-  - {fileID: 264476308}
-  - {fileID: 905177909}
-  - {fileID: 1319432812}
-  raliwayList: []
 --- !u!64 &182046712
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5865,11 +5819,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1626331715}
-  - {fileID: 2134784829}
-  raliwayList: []
 --- !u!64 &209092910
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5979,13 +5928,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 654723404}
-  - {fileID: 232667530}
-  - {fileID: 2006525912}
-  raliwayList:
-  - {fileID: 1986053469}
 --- !u!64 &209595499
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6287,12 +6229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 854901085}
-  raliwayList:
-  - {fileID: 367806960}
-  - {fileID: 990059898}
 --- !u!64 &217436882
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6402,12 +6338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1971278680}
-  - {fileID: 1517077498}
-  - {fileID: 1381073947}
-  raliwayList: []
 --- !u!64 &220621676
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6772,11 +6702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 209595497}
-  - {fileID: 144181671}
-  raliwayList: []
 --- !u!64 &232667533
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7219,11 +7144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 854901085}
-  - {fileID: 1939525845}
-  raliwayList: []
 --- !u!64 &246472041
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7333,13 +7253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1202585106}
-  - {fileID: 1336212876}
-  - {fileID: 596429406}
-  - {fileID: 182046710}
-  raliwayList: []
 --- !u!64 &247619631
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7449,12 +7362,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2060345834}
-  raliwayList:
-  - {fileID: 675778863}
-  - {fileID: 1540166670}
 --- !u!64 &256869136
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7564,12 +7471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 182046710}
-  raliwayList:
-  - {fileID: 741943544}
-  - {fileID: 674371429}
 --- !u!64 &264476310
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7679,11 +7580,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1974541165}
-  - {fileID: 678602695}
 --- !u!64 &271827752
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7886,10 +7782,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1426757382}
-  raliwayList: []
 --- !u!64 &274875999
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8134,12 +8026,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2031190561}
-  - {fileID: 1732010638}
-  - {fileID: 1661512652}
-  raliwayList: []
 --- !u!64 &292405353
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8548,14 +8434,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1903632120}
-  - {fileID: 854840769}
-  raliwayList:
-  - {fileID: 885337536}
-  - {fileID: 1380604667}
-  - {fileID: 1530973362}
 --- !u!64 &301982130
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8665,12 +8543,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1175559337}
-  - {fileID: 2089893067}
-  - {fileID: 1052600549}
-  raliwayList: []
 --- !u!64 &318904469
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9499,11 +9371,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 542536853}
-  - {fileID: 1811826260}
 --- !u!64 &356887118
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9788,11 +9655,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1355321244}
-  - {fileID: 57024640}
-  raliwayList: []
 --- !u!64 &362744032
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9998,13 +9860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2119583023}
-  - {fileID: 1939525845}
-  raliwayList:
-  - {fileID: 759444810}
-  - {fileID: 217436880}
 --- !u!64 &367806962
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11385,11 +11240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 996102585}
-  - {fileID: 1899167119}
 --- !u!64 &432923725
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11499,12 +11349,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 674371429}
-  raliwayList:
-  - {fileID: 905177909}
-  - {fileID: 144181671}
 --- !u!64 &435513126
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11867,12 +11711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 144181671}
-  - {fileID: 654723404}
-  - {fileID: 1984150580}
-  raliwayList: []
 --- !u!64 &450694309
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12507,12 +12345,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1811826260}
-  - {fileID: 1237796121}
-  - {fileID: 68013130}
 --- !u!64 &477943162
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13105,12 +12937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1310193447}
-  raliwayList:
-  - {fileID: 1920530348}
-  - {fileID: 1381073947}
 --- !u!64 &504186189
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13347,6 +13173,49 @@ Transform:
   m_Father: {fileID: 2100730775}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &515622525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 515622527}
+  - component: {fileID: 515622526}
+  m_Layer: 0
+  m_Name: linshi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &515622526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515622525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a855ca82b7ec4438d53097f7fdc53c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &515622527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515622525}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 405.5861, y: 12.858869, z: 252.43712}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &524255426
 GameObject:
   m_ObjectHideFlags: 0
@@ -13379,13 +13248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1098494188}
-  - {fileID: 1524380194}
-  - {fileID: 1710138743}
-  - {fileID: 695382699}
-  raliwayList: []
 --- !u!64 &524255428
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13923,12 +13785,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1939525845}
-  raliwayList:
-  - {fileID: 889625057}
-  - {fileID: 1920530348}
 --- !u!64 &531963018
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14376,12 +14232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 105785260}
-  - {fileID: 356887116}
-  - {fileID: 1581601426}
 --- !u!64 &542536855
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14784,6 +14634,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549991953}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &557435506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 557435509}
+  - component: {fileID: 557435508}
+  - component: {fileID: 557435507}
+  m_Layer: 0
+  m_Name: Terrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!154 &557435507
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557435506}
+  m_Material: {fileID: 0}
+  m_Enabled: 1
+  m_TerrainData: {fileID: 15600000, guid: ecc30d3427780c342a1c83ce706a8a59, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &557435508
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557435506}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: ecc30d3427780c342a1c83ce706a8a59, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 1
+  m_SplatMapDistance: 1000
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ScaleInLightmap: 0.0256
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+--- !u!4 &557435509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557435506}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &568054790
 GameObject:
   m_ObjectHideFlags: 0
@@ -14830,12 +14756,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 152529784}
-  - {fileID: 1732010638}
-  raliwayList:
-  - {fileID: 1019845494}
 --- !u!64 &568054793
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15123,11 +15043,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1336212876}
-  - {fileID: 1553621976}
 --- !u!64 &579096948
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15857,11 +15772,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1458629077}
-  - {fileID: 736909543}
-  raliwayList: []
 --- !u!64 &595746412
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15971,12 +15881,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 247619629}
-  raliwayList:
-  - {fileID: 1336212876}
-  - {fileID: 1626331715}
 --- !u!64 &596429408
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16086,12 +15990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 736909543}
-  raliwayList:
-  - {fileID: 1905667987}
-  - {fileID: 126824567}
 --- !u!64 &596710700
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16201,11 +16099,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1954731906}
-  - {fileID: 1212995418}
-  raliwayList: []
 --- !u!64 &597820922
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16689,11 +16582,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1661512652}
-  - {fileID: 1858615028}
-  raliwayList: []
 --- !u!64 &602184091
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17046,13 +16934,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 158910704}
-  - {fileID: 110799120}
-  raliwayList:
-  - {fileID: 1311072450}
-  - {fileID: 1344241094}
 --- !u!64 &617700210
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17148,11 +17029,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2119583023}
-  - {fileID: 1719948127}
-  raliwayList: []
 --- !u!64 &620608361
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17599,11 +17475,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1031122781}
-  - {fileID: 106947723}
-  raliwayList: []
 --- !u!64 &631835041
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17713,11 +17584,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1939525845}
-  - {fileID: 1920530348}
-  raliwayList: []
 --- !u!64 &633678904
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17827,13 +17693,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1202585106}
-  - {fileID: 1913589554}
-  - {fileID: 790176130}
-  - {fileID: 1989461184}
-  raliwayList: []
 --- !u!64 &637135772
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18022,12 +17881,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1212995418}
-  - {fileID: 177734296}
-  - {fileID: 1480888370}
-  raliwayList: []
 --- !u!64 &654076788
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18137,13 +17990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 450694307}
-  - {fileID: 1986053469}
-  - {fileID: 209595497}
-  - {fileID: 1984150580}
-  raliwayList: []
 --- !u!64 &654723406
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18428,11 +18274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1040990348}
-  - {fileID: 961045034}
 --- !u!64 &659036852
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18976,12 +18817,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 435513124}
-  raliwayList:
-  - {fileID: 264476308}
-  - {fileID: 144181671}
 --- !u!64 &674371431
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19091,12 +18926,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2075505834}
-  raliwayList:
-  - {fileID: 49891218}
-  - {fileID: 256869134}
 --- !u!64 &675778865
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19302,10 +19131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 271827750}
 --- !u!64 &678602697
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19658,13 +19483,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 524255426}
-  raliwayList:
-  - {fileID: 1930921305}
-  - {fileID: 759444810}
-  - {fileID: 1710138743}
 --- !u!64 &695382701
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19774,12 +19592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1463914499}
-  raliwayList:
-  - {fileID: 971892566}
-  - {fileID: 68013130}
 --- !u!64 &696408995
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20686,13 +20498,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 68013130}
-  - {fileID: 1256592358}
-  - {fileID: 1745242487}
-  - {fileID: 1054543814}
-  raliwayList: []
 --- !u!64 &727518552
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20802,12 +20607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 595746410}
-  - {fileID: 596710698}
-  - {fileID: 50546791}
-  raliwayList: []
 --- !u!64 &736909545
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21109,12 +20908,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1707405661}
-  raliwayList:
-  - {fileID: 1913589554}
-  - {fileID: 264476308}
 --- !u!64 &741943546
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21416,12 +21209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1746496734}
-  raliwayList:
-  - {fileID: 1924567435}
-  - {fileID: 971892566}
 --- !u!64 &756320039
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21531,13 +21318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1710138743}
-  - {fileID: 889625057}
-  - {fileID: 695382699}
-  - {fileID: 367806960}
 --- !u!64 &759444812
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21822,11 +21602,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1255772463}
-  - {fileID: 637135770}
-  raliwayList: []
 --- !u!64 &790176132
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22111,13 +21886,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1533913337}
-  - {fileID: 1054543814}
-  raliwayList:
-  - {fileID: 818257621}
-  - {fileID: 1250120093}
 --- !u!64 &813052819
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22323,11 +22091,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 68013130}
-  - {fileID: 813052817}
 --- !u!64 &818257623
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22437,13 +22200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2121345354}
-  - {fileID: 41301753}
-  raliwayList:
-  - {fileID: 1472258343}
-  - {fileID: 996102585}
 --- !u!64 &818783154
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22553,11 +22309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1212995418}
-  - {fileID: 1231123387}
-  raliwayList: []
 --- !u!64 &818798291
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22997,14 +22748,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1950865337}
-  - {fileID: 1355321244}
-  - {fileID: 1031122781}
-  raliwayList:
-  - {fileID: 2031190561}
-  - {fileID: 1287911955}
 --- !u!64 &831003867
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23259,12 +23002,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1231123387}
-  - {fileID: 2015870951}
-  - {fileID: 1019845494}
-  raliwayList: []
 --- !u!64 &848062430
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23374,13 +23111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2068183507}
-  - {fileID: 301982128}
-  - {fileID: 1903632120}
-  - {fileID: 177734296}
-  raliwayList: []
 --- !u!64 &854840771
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23490,12 +23220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 217436880}
-  - {fileID: 965077334}
-  - {fileID: 246472039}
-  raliwayList: []
 --- !u!64 &854901087
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23605,12 +23329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2033534959}
-  raliwayList:
-  - {fileID: 1609173385}
-  - {fileID: 1524380194}
 --- !u!64 &862364388
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23926,12 +23644,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2031190561}
-  - {fileID: 1661512652}
-  - {fileID: 1355321244}
-  raliwayList: []
 --- !u!64 &868136814
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24456,12 +24168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1636105504}
-  - {fileID: 1380604667}
-  - {fileID: 301982128}
 --- !u!64 &885337538
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24684,13 +24390,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 48267100}
-  raliwayList:
-  - {fileID: 1710138743}
-  - {fileID: 759444810}
-  - {fileID: 531963016}
 --- !u!64 &889625059
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25155,12 +24854,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 182046710}
-  raliwayList:
-  - {fileID: 1626331715}
-  - {fileID: 1319432812}
 --- !u!64 &905177911
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26066,13 +25759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1492701671}
-  - {fileID: 1876137795}
-  - {fileID: 1380604667}
-  raliwayList:
-  - {fileID: 659036850}
 --- !u!64 &961045036
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26256,11 +25942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1747627258}
-  - {fileID: 854901085}
-  raliwayList: []
 --- !u!64 &965077336
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26370,13 +26051,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1746496734}
-  raliwayList:
-  - {fileID: 756320037}
-  - {fileID: 696408993}
-  - {fileID: 1463914499}
 --- !u!64 &971892568
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26757,12 +26431,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1141311763}
-  - {fileID: 1542920949}
-  raliwayList:
-  - {fileID: 2145523714}
 --- !u!64 &984558066
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27064,11 +26732,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 217436880}
-  - {fileID: 1018659016}
 --- !u!64 &990059900
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27178,11 +26841,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 2057856550}
-  - {fileID: 152529784}
 --- !u!64 &992748080
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27388,14 +27046,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 41301753}
-  - {fileID: 1513432704}
-  raliwayList:
-  - {fileID: 818783152}
-  - {fileID: 1472258343}
-  - {fileID: 432923723}
 --- !u!64 &996102587
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27835,12 +27485,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1146159147}
-  - {fileID: 48267100}
-  - {fileID: 1971278680}
-  raliwayList: []
 --- !u!64 &1013778234
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28043,7 +27687,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1016303843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84e3b8a2203b9bb4cb1f6f3b8bd53992, type: 3}
+  m_Script: {fileID: 11500000, guid: 3aeee0ed373747f41ab186989aa9a603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1018659016
@@ -28078,11 +27722,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 217436880}
-  - {fileID: 1747627258}
 --- !u!64 &1018659018
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28192,12 +27831,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 848062428}
-  raliwayList:
-  - {fileID: 568054790}
-  - {fileID: 1230621394}
 --- !u!64 &1019845496
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28499,13 +28132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1426757382}
-  - {fileID: 1287911955}
-  - {fileID: 831003865}
-  - {fileID: 631835039}
-  raliwayList: []
 --- !u!64 &1031122783
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28711,11 +28337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1899167119}
-  - {fileID: 1344241094}
 --- !u!64 &1038480558
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28825,13 +28446,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1609173385}
-  - {fileID: 105785260}
-  - {fileID: 659036850}
-  - {fileID: 1259840766}
 --- !u!64 &1040990350
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29216,11 +28830,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1924567435}
-  - {fileID: 1581601426}
 --- !u!64 &1049751849
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29409,11 +29018,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 318904467}
-  - {fileID: 1411315977}
-  raliwayList: []
 --- !u!64 &1052600551
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29523,13 +29127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 727518550}
-  - {fileID: 1745242487}
-  - {fileID: 813052817}
-  - {fileID: 2075505834}
-  raliwayList: []
 --- !u!64 &1054543816
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29718,12 +29315,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1123562648}
-  - {fileID: 1954731906}
-  - {fileID: 2145523714}
-  raliwayList: []
 --- !u!64 &1059212748
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30011,12 +29602,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1517077498}
-  raliwayList:
-  - {fileID: 1381073947}
-  - {fileID: 1287911955}
 --- !u!64 &1088684916
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30222,12 +29807,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2033534959}
-  - {fileID: 524255426}
-  - {fileID: 1146159147}
-  raliwayList: []
 --- !u!64 &1098494190
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30605,13 +30184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1688220971}
-  - {fileID: 2068183507}
-  - {fileID: 177734296}
-  - {fileID: 1059212746}
-  raliwayList: []
 --- !u!64 &1123562650
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30721,10 +30293,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 4125173882361180989}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1747627258}
 --- !u!64 &1129461919
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31083,11 +30651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 984558064}
-  - {fileID: 1656748895}
-  raliwayList: []
 --- !u!64 &1141311766
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31224,14 +30787,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1013778232}
-  - {fileID: 1903632120}
-  - {fileID: 1098494188}
-  raliwayList:
-  - {fileID: 1829522575}
-  - {fileID: 1849628477}
 --- !u!64 &1146159149
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31597,12 +31152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1237796121}
-  raliwayList:
-  - {fileID: 1857420207}
-  - {fileID: 1250120093}
 --- !u!64 &1155229828
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32003,13 +31552,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 106947723}
-  - {fileID: 57024640}
-  - {fileID: 318904467}
-  - {fileID: 1952515162}
-  raliwayList: []
 --- !u!64 &1175559340
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32664,13 +32206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 637135770}
-  - {fileID: 247619629}
-  raliwayList:
-  - {fileID: 1913589554}
-  - {fileID: 1989461184}
 --- !u!64 &1202585108
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32899,13 +32434,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1688220971}
-  - {fileID: 597820920}
-  - {fileID: 654076786}
-  - {fileID: 818798289}
-  raliwayList: []
 --- !u!64 &1212995420
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33094,12 +32622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1950865337}
-  raliwayList:
-  - {fileID: 1019845494}
-  - {fileID: 2031190561}
 --- !u!64 &1230621396
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33209,11 +32731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 818798289}
-  - {fileID: 848062428}
-  raliwayList: []
 --- !u!64 &1231123389
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33402,12 +32919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1849628477}
-  - {fileID: 177734296}
-  - {fileID: 1903632120}
-  raliwayList: []
 --- !u!64 &1234429128
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -33692,12 +33203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1155229826}
-  raliwayList:
-  - {fileID: 477943160}
-  - {fileID: 1857420207}
 --- !u!64 &1237796123
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34269,12 +33774,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1155229826}
-  - {fileID: 813052817}
-  - {fileID: 1533913337}
 --- !u!64 &1250120095
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34513,14 +34012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1924567435}
-  - {fileID: 14969785}
-  - {fileID: 1803516305}
-  - {fileID: 1456235747}
-  - {fileID: 790176130}
-  raliwayList: []
 --- !u!64 &1255772465
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34709,11 +34200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 68013130}
-  - {fileID: 727518550}
-  raliwayList: []
 --- !u!64 &1256592360
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34919,13 +34405,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1609173385}
-  - {fileID: 1708138435}
-  - {fileID: 1943172508}
-  - {fileID: 1040990348}
 --- !u!64 &1259840768
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35227,14 +34706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1517077498}
-  - {fileID: 1950865337}
-  - {fileID: 1031122781}
-  raliwayList:
-  - {fileID: 1088684914}
-  - {fileID: 831003865}
 --- !u!64 &1287911957
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35748,11 +35219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 504186187}
-  - {fileID: 1426757382}
-  raliwayList: []
 --- !u!64 &1310193449
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35862,12 +35328,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1741501187}
-  raliwayList:
-  - {fileID: 1857420207}
-  - {fileID: 1930921305}
 --- !u!64 &1310231167
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35977,12 +35437,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 174351143}
-  raliwayList:
-  - {fileID: 66404277}
-  - {fileID: 617700207}
 --- !u!64 &1311072452
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36092,12 +35546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 182046710}
-  raliwayList:
-  - {fileID: 905177909}
-  - {fileID: 435513124}
 --- !u!64 &1319432814
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36492,13 +35940,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 247619629}
-  raliwayList:
-  - {fileID: 1989461184}
-  - {fileID: 596429406}
-  - {fileID: 579096946}
 --- !u!64 &1336212878
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36766,14 +36207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 787621190153554553}
-  roadsList:
-  - {fileID: 1500161357}
-  - {fileID: 158910704}
-  - {fileID: 110799120}
-  raliwayList:
-  - {fileID: 66404277}
-  - {fileID: 126824567}
 --- !u!64 &1344241097
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37222,13 +36655,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2031190561}
-  - {fileID: 868136811}
-  - {fileID: 831003865}
-  - {fileID: 362744030}
-  raliwayList: []
 --- !u!64 &1355321246
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37514,12 +36940,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1971278680}
-  - {fileID: 1849628477}
-  - {fileID: 1480888370}
-  raliwayList: []
 --- !u!64 &1361461496
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37807,14 +37227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1876137795}
-  - {fileID: 961045034}
-  - {fileID: 2145523714}
-  raliwayList:
-  - {fileID: 885337536}
-  - {fileID: 301982128}
 --- !u!64 &1380604669
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37924,13 +37336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 220621674}
-  raliwayList:
-  - {fileID: 1920530348}
-  - {fileID: 504186187}
-  - {fileID: 1088684914}
 --- !u!64 &1381073949
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -38363,11 +37768,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1678805675}
-  raliwayList:
-  - {fileID: 1458629077}
 --- !u!64 &1390469040
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -38720,11 +38120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1052600549}
-  - {fileID: 106947723}
-  raliwayList: []
 --- !u!64 &1411315979
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -39240,7 +38635,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1419421625}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58c3efe8950afb142809e09dab08f1a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 7bfa593512085214c96643287ee7597d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1421485258
@@ -39450,12 +38845,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1310193447}
-  - {fileID: 1031122781}
-  - {fileID: 274875996}
-  raliwayList: []
 --- !u!64 &1426757384
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -39581,7 +38970,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1436383579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a26027c9b1220f4fbad18d3ea618914, type: 3}
+  m_Script: {fileID: 11500000, guid: a03b58e75e9984d40931ebcf974ac9f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1440372497
@@ -39748,12 +39137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1255772463}
-  - {fileID: 1783577164}
-  - {fileID: 1913589554}
-  raliwayList: []
 --- !u!64 &1456235749
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -39899,13 +39282,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 595746410}
-  raliwayList:
-  - {fileID: 126824567}
-  - {fileID: 1390469038}
-  - {fileID: 1876137795}
 --- !u!64 &1458629079
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40111,11 +39487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 696408993}
-  raliwayList:
-  - {fileID: 971892566}
 --- !u!64 &1463914501
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40225,12 +39596,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1492701671}
-  - {fileID: 1984150580}
-  - {fileID: 1876137795}
-  raliwayList: []
 --- !u!64 &1465438373
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40564,13 +39929,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1715758278}
-  raliwayList:
-  - {fileID: 996102585}
-  - {fileID: 1905667987}
-  - {fileID: 818783152}
 --- !u!64 &1472258345
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40680,13 +40038,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1361461493}
-  - {fileID: 654076786}
-  - {fileID: 1582560117}
-  - {fileID: 2015870951}
-  raliwayList: []
 --- !u!64 &1480888372
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40907,13 +40258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 961045034}
-  - {fileID: 1707405661}
-  - {fileID: 1581601426}
-  - {fileID: 1465438371}
-  raliwayList: []
 --- !u!64 &1492701673
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -41212,11 +40556,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 41301753}
-  - {fileID: 1344241094}
-  raliwayList: []
 --- !u!64 &1500161359
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -41526,11 +40865,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1715758278}
-  - {fileID: 996102585}
-  raliwayList: []
 --- !u!64 &1513432706
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -41640,13 +40974,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 220621674}
-  - {fileID: 1582560117}
-  - {fileID: 1088684914}
-  - {fileID: 1287911955}
-  raliwayList: []
 --- !u!64 &1517077500
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -41756,13 +41083,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 524255426}
-  - {fileID: 1930921305}
-  raliwayList:
-  - {fileID: 862364386}
-  - {fileID: 1541697264}
 --- !u!64 &1524380196
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42061,12 +41381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2068183507}
-  - {fileID: 2145523714}
-  raliwayList:
-  - {fileID: 301982128}
 --- !u!64 &1530973365
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42162,12 +41476,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 813052817}
-  raliwayList:
-  - {fileID: 1250120093}
-  - {fileID: 49891218}
 --- !u!64 &1533913339
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42373,10 +41681,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 256869134}
 --- !u!64 &1540166672
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42522,11 +41826,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1857420207}
-  - {fileID: 1524380194}
 --- !u!64 &1541697266
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42636,11 +41935,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1678805675}
-  - {fileID: 984558064}
-  raliwayList: []
 --- !u!64 &1542920951
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -43100,11 +42394,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 579096946}
-  - {fileID: 1974541165}
 --- !u!64 &1553621978
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -43690,13 +42979,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1492701671}
-  raliwayList:
-  - {fileID: 542536853}
-  - {fileID: 1049751847}
-  - {fileID: 14969785}
 --- !u!64 &1581601428
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -43806,13 +43088,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1971278680}
-  - {fileID: 1480888370}
-  - {fileID: 1517077498}
-  - {fileID: 1950865337}
-  raliwayList: []
 --- !u!64 &1582560119
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -44169,7 +43444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605013315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.07, y: 2.11, z: 2.63}
+  m_LocalPosition: {x: 452.2, y: 23.4, z: 260.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
@@ -44185,7 +43460,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1605013315}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29c815de0fff71640a10b2d1d33f6785, type: 3}
+  m_Script: {fileID: 11500000, guid: f27748be353688340a5216817776404b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1605137393
@@ -44395,13 +43670,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 105785260}
-  - {fileID: 1040990348}
-  - {fileID: 862364386}
-  - {fileID: 1259840766}
 --- !u!64 &1609173387
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -44886,12 +44154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 209092908}
-  raliwayList:
-  - {fileID: 596429406}
-  - {fileID: 905177909}
 --- !u!64 &1626331717
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45073,12 +44335,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1980252192}
-  raliwayList:
-  - {fileID: 1708138435}
-  - {fileID: 885337536}
 --- !u!64 &1636105506
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45670,11 +44926,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 143529531}
-  - {fileID: 1141311763}
-  raliwayList: []
 --- !u!64 &1656748898
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45866,12 +45117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 292405350}
-  - {fileID: 868136811}
-  - {fileID: 602184089}
-  raliwayList: []
 --- !u!64 &1661512654
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45981,12 +45226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1876137795}
-  - {fileID: 1390469038}
-  - {fileID: 1542920949}
-  raliwayList: []
 --- !u!64 &1678805677
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -46337,11 +45576,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1212995418}
-  - {fileID: 1123562648}
-  raliwayList: []
 --- !u!64 &1688220973
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -46884,12 +46118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 741943544}
-  - {fileID: 1492701671}
-  raliwayList:
-  - {fileID: 1889979440}
 --- !u!64 &1707405663
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47095,13 +46323,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2033534959}
-  raliwayList:
-  - {fileID: 1636105504}
-  - {fileID: 1829522575}
-  - {fileID: 1259840766}
 --- !u!64 &1708138437
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47211,14 +46432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 524255426}
-  - {fileID: 48267100}
-  raliwayList:
-  - {fileID: 759444810}
-  - {fileID: 889625057}
-  - {fileID: 695382699}
 --- !u!64 &1710138745
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47328,11 +46541,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1472258343}
-  - {fileID: 1513432704}
-  raliwayList: []
 --- !u!64 &1715758280
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47442,11 +46650,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 49891218}
-  - {fileID: 620608359}
-  raliwayList: []
 --- !u!64 &1719948129
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47685,11 +46888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 292405350}
-  - {fileID: 568054790}
-  raliwayList: []
 --- !u!64 &1732010641
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47919,11 +47117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1310231165}
-  - {fileID: 2119583023}
-  raliwayList: []
 --- !u!64 &1741501189
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48033,11 +47226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 727518550}
-  - {fileID: 1054543814}
-  raliwayList: []
 --- !u!64 &1745242489
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48147,13 +47335,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 68013130}
-  - {fileID: 1811826260}
-  - {fileID: 756320037}
-  - {fileID: 971892566}
-  raliwayList: []
 --- !u!64 &1746496736
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48359,12 +47540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 965077334}
-  raliwayList:
-  - {fileID: 1018659016}
-  - {fileID: 1129461917}
 --- !u!64 &1747627260
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48883,12 +48058,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1456235747}
-  raliwayList:
-  - {fileID: 1803516305}
-  - {fileID: 1889979440}
 --- !u!64 &1783577166
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -49094,12 +48263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1255772463}
-  raliwayList:
-  - {fileID: 14969785}
-  - {fileID: 1783577164}
 --- !u!64 &1803516307
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -49305,13 +48468,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1746496734}
-  raliwayList:
-  - {fileID: 1924567435}
-  - {fileID: 356887116}
-  - {fileID: 477943160}
 --- !u!64 &1811826262
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -49514,11 +48670,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1708138435}
-  - {fileID: 1146159147}
 --- !u!64 &1829522577
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -50048,12 +49199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1234429126}
-  - {fileID: 1361461493}
-  raliwayList:
-  - {fileID: 1146159147}
 --- !u!64 &1849628479
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -50259,13 +49404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1237796121}
-  - {fileID: 1541697264}
-  - {fileID: 1155229826}
-  - {fileID: 1310231165}
 --- !u!64 &1857420209
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -50389,11 +49527,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 602184089}
-  - {fileID: 1952515162}
-  raliwayList: []
 --- !u!64 &1858615031
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -50489,15 +49622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1984150580}
-  - {fileID: 961045034}
-  - {fileID: 1465438371}
-  - {fileID: 1678805675}
-  - {fileID: 1380604667}
-  raliwayList:
-  - {fileID: 1458629077}
 --- !u!64 &1876137797
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -50861,12 +49985,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1783577164}
-  - {fileID: 1707405661}
-  - {fileID: 1913589554}
 --- !u!64 &1889979442
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51121,11 +50239,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 432923723}
-  - {fileID: 1038480556}
 --- !u!64 &1899167121
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51235,13 +50348,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1234429126}
-  - {fileID: 1146159147}
-  - {fileID: 301982128}
-  - {fileID: 854840769}
-  raliwayList: []
 --- !u!64 &1903632122
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51447,13 +50553,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 50546791}
-  - {fileID: 2121345354}
-  raliwayList:
-  - {fileID: 1472258343}
-  - {fileID: 596710698}
 --- !u!64 &1905667989
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51659,14 +50758,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1456235747}
-  - {fileID: 637135770}
-  raliwayList:
-  - {fileID: 1889979440}
-  - {fileID: 741943544}
-  - {fileID: 1202585106}
 --- !u!64 &1913589556
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51872,12 +50963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 633678902}
-  raliwayList:
-  - {fileID: 531963016}
-  - {fileID: 1381073947}
 --- !u!64 &1920530350
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51987,13 +51072,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1255772463}
-  raliwayList:
-  - {fileID: 1049751847}
-  - {fileID: 1811826260}
-  - {fileID: 756320037}
 --- !u!64 &1924567437
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -52182,12 +51260,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1524380194}
-  raliwayList:
-  - {fileID: 1310231165}
-  - {fileID: 695382699}
 --- !u!64 &1930921307
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -52585,13 +51657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 246472039}
-  - {fileID: 367806960}
-  - {fileID: 633678902}
-  - {fileID: 531963016}
-  raliwayList: []
 --- !u!64 &1939525847
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -52893,11 +51958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1980252192}
-  raliwayList:
-  - {fileID: 1259840766}
 --- !u!64 &1943172510
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53117,13 +52177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1230621394}
-  - {fileID: 1582560117}
-  - {fileID: 831003865}
-  - {fileID: 1287911955}
-  raliwayList: []
 --- !u!64 &1950865340
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53256,12 +52309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1175559337}
-  - {fileID: 2089893067}
-  - {fileID: 1858615028}
-  raliwayList: []
 --- !u!64 &1952515164
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53371,12 +52418,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 152529784}
-  - {fileID: 597820920}
-  - {fileID: 1059212746}
-  raliwayList: []
 --- !u!64 &1954731908
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53650,13 +52691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1013778232}
-  - {fileID: 1361461493}
-  - {fileID: 220621674}
-  - {fileID: 1582560117}
-  raliwayList: []
 --- !u!64 &1971278683
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53752,11 +52786,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 1553621976}
-  - {fileID: 271827750}
 --- !u!64 &1974541167
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53866,11 +52895,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1943172508}
-  - {fileID: 1636105504}
-  raliwayList: []
 --- !u!64 &1980252194
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53980,14 +53004,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2006525912}
-  - {fileID: 450694307}
-  - {fileID: 1876137795}
-  - {fileID: 1465438371}
-  - {fileID: 654723404}
-  raliwayList: []
 --- !u!64 &1984150582
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54097,13 +53113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 654723404}
-  - {fileID: 209595497}
-  raliwayList:
-  - {fileID: 209595497}
-  - {fileID: 144181671}
 --- !u!64 &1986053471
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54309,12 +53318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 637135770}
-  raliwayList:
-  - {fileID: 1202585106}
-  - {fileID: 1336212876}
 --- !u!64 &1989461186
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54517,12 +53520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 126824567}
-  - {fileID: 209595497}
-  - {fileID: 1984150580}
-  raliwayList: []
 --- !u!64 &2006525915
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54618,12 +53615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 2134784829}
-  - {fileID: 66404277}
-  - {fileID: 174351143}
-  raliwayList: []
 --- !u!64 &2010708456
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54747,11 +53738,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1480888370}
-  - {fileID: 848062428}
-  raliwayList: []
 --- !u!64 &2015870954
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -55039,13 +54025,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 292405350}
-  - {fileID: 868136811}
-  raliwayList:
-  - {fileID: 1230621394}
-  - {fileID: 831003865}
 --- !u!64 &2031190563
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -55234,12 +54213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1708138435}
-  - {fileID: 1098494188}
-  - {fileID: 862364386}
-  raliwayList: []
 --- !u!64 &2033534961
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -55678,11 +54651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList: []
-  raliwayList:
-  - {fileID: 2145523714}
-  - {fileID: 992748078}
 --- !u!64 &2057856552
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -55871,10 +54839,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 256869134}
-  raliwayList: []
 --- !u!64 &2060345836
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56080,12 +55044,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1123562648}
-  - {fileID: 1530973362}
-  - {fileID: 854840769}
-  raliwayList: []
 --- !u!64 &2068183509
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56466,11 +55424,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1054543814}
-  - {fileID: 675778863}
-  raliwayList: []
 --- !u!64 &2075505836
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56772,11 +55725,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 318904467}
-  - {fileID: 1952515162}
-  raliwayList: []
 --- !u!64 &2089893069
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -57225,7 +56173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &2100730772
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -57259,7 +56207,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1da300afe63ef5843ab749706ee7725d, type: 2}
+  - {fileID: 2100000, guid: 10c13c9cdd9b0ef4faf99fd61fc58946, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -57826,12 +56774,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 367806960}
-  - {fileID: 1741501187}
-  - {fileID: 620608359}
-  raliwayList: []
 --- !u!64 &2119583025
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -57941,12 +56883,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 126824567}
-  - {fileID: 1905667987}
-  - {fileID: 818783152}
-  raliwayList: []
 --- !u!64 &2121345356
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -58135,11 +57071,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 209092908}
-  - {fileID: 2010708454}
-  raliwayList: []
 --- !u!64 &2134784831
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -58249,14 +57180,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78a0360fd8900664496f07036f3d1d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chess: {fileID: 0}
-  roadsList:
-  - {fileID: 1380604667}
-  - {fileID: 1530973362}
-  - {fileID: 1059212746}
-  raliwayList:
-  - {fileID: 984558064}
-  - {fileID: 2057856550}
 --- !u!64 &2145523716
 MeshCollider:
   m_ObjectHideFlags: 0
