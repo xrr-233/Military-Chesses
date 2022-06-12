@@ -16,7 +16,7 @@ public class CameraControl : MonoBehaviour
     private float horizontal;//按下A、D或左右键会从零开始慢慢到-1或1，用来使角色移动更加平滑
     private float vertical;
 
-    private Vector3 lastRotation, lastPosition, cityScale;
+    private Vector3 lastRotation, lastPosition;
     private GameObject MainCamera;
     void Start()
     {
